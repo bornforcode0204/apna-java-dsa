@@ -53,3 +53,5 @@ switch(variable){
             break;(optional)
 }
 ```
+
+![Leap year flow chart](./Assets/9/leap%20year.png)("----Leap year logic flowchart----")
