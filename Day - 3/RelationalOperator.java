@@ -9,7 +9,7 @@ public class RelationalOperator {
     // System.out.println(a == b);
     // System.out.println(c == b);
 
-    // System.out.println(a != b);
+    System.out.println(a != b);
     // System.out.println(c != b);
 
     // System.out.println(a > c);

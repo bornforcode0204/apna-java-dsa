@@ -17,7 +17,7 @@ public class TypePromotion {
         byte b1 = 5;
         byte a1 = (byte) (b1 * 2);
         System.out.println(a1);
-        int $ = 24;
+        // int $ = 24;
     }
 }
 
