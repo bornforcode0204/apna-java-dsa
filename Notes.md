@@ -55,3 +55,39 @@ switch(variable){
 ```
 
 ![Leap year flow chart](./Assets/9/leap%20year.png)("----Leap year logic flowchart----")
+
+# ▶ While Loop:
+
+```java
+while(condition){
+    code
+}
+```
+
+# ▶ For Loop:
+
+```java
+for(initialisation; condition; updation){
+    code
+}
+```
+
+# ▶ do-while Loop:
+
+```java
+do{
+    code
+}while(condition);
+```
+
+# ▶ Break Statement:
+
+to exit the loop
+
+# ▶ Continue Statement:
+
+to skip an iteration (current iteration)
+
+## Primr number:
+
+2,3,5,7,11...etc, and other are the composite number.
