@@ -14,7 +14,7 @@ public class Output {
 // How to run 
 // 1. go to file location in cmd or terminal
 // 2. type "javac filename.java"
-// 3. type "java filename.java"
+// 3. type "java filename"
 
 // if % is comming after output means it is comming because it is not getting nextline
 

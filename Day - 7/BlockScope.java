@@ -4,6 +4,6 @@ public class BlockScope {
             int s = 34;
             System.out.println(s);
         }
-        System.out.println(s);
+        // System.out.println(s); // Uncomment this line
     }
 }

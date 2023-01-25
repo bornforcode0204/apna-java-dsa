@@ -18,4 +18,4 @@ public class Input {
 // nextBoolean
 // nextShort
 // nextLong
-//echo - means print
+// echo - means print
