@@ -23,16 +23,17 @@ classname and file name should be same
 // Single line comment
 
 /*
- Multiline
+Multiline
 comment
- */
+*/
 
 ```
 
 # Variable
 
-2*(a+b)==> 2 is Literal a and b are Variable
-2*(a+b) is an expression
+2\*(a+b) ==> 2 is Literal a and b are Variable
+
+2\*(a+b) is an expression
 
 2 is a number literals and a,@ are the character literals
 
@@ -45,9 +46,10 @@ a,b,c,..., classname(filename), main function, print,println are calles Identifi
 Java is a typed language
 means you have to write the type of data before declaring variable
 
-\*size in bytes, 1byte = 8bit and 1 bit == 0 or 1
+size in bytes, 1byte = 8bit and 1 bit == 0 or 1
 
 1. Primitive - 8
+
    byte - 1,
    short - 2,
    char - 2,
@@ -58,6 +60,7 @@ means you have to write the type of data before declaring variable
    double - 8
 
 2. Non-Primitive
+
    String,
    Array,
    Class,
@@ -69,19 +72,30 @@ java is a strictly typed language
 # Taking input in Java
 
 import java.util.\*; (util is a package)
+
 Scanner sc = new Scanner(System.in);
+
 next - take only one token
+
 nextLine - take entire line
+
 nextInt
+
 nextByte
+
 nextFloat
+
 nextDouble
+
 nextBoolean
+
 nextShort
+
 nextLong
+
 echo - means print
 
-we write f after float data type Java by default consider float value as a double data type
+we write f after float data type, Java by default consider float value as a double data type
 
 ```java
 float price = 10.50f;
@@ -118,8 +132,11 @@ when destination type < source type is called Type casting(narrowing conversion 
 # Type Conversion
 
 when we convert one type of data into another type of data is called type conversion (widening and implicit conversion).
+
 Type conversion happens when:
+
 a . type compatible
+
 b. destination type > source type(if not than lossy conversion happens it can not done automatically)
 
 byte -> short -> int ->float -> long -> double
@@ -132,6 +149,7 @@ long b = a;
 # Type Promotion
 
 Type promotion is a phinomina in Java
+
 Type Promotion in Expressions
 
 1. Java automatically promotes each byte, short, or char operand to int when evaluating an expression.
@@ -198,25 +216,34 @@ Binary Unary
 
 -                     ++(pre-increment/post-increment)
 
-*                     --(pre-decrement/post-decrement)
+-                     --(pre-decrement/post-decrement)
 
 - /
-  %
+- %
+- \+
+- \-
+- \*
 
 2. Relational Operators
 
    == equal
+
    != not equal to (inequality)
 
    > grater than
+
    > < less than
+
    > = grater than equal to
+
    > <= less than equal to
 
 3. Logical Operators
 
    && (Logical AND) -> ture when both condition are true otherwise false
+
    || (Logical OR) -> false when both condition are false otherwise true
+
    ! (Logical NOT) -> It reverse T->F, F->T
 
 4. Assignment Operators
@@ -435,7 +462,7 @@ Function overloading does not depend on the return type of function it depends o
 # ▶ Scope
 
 Scope of variable is referred to the part of the program where the variable can be used.
-In this program variable i is declared in the for loop. So scope of variable i is limited to the for loop only that is between {and} of the for loop.There is a display statement after the forloop where variable i is used which means i is used out of scope. This leads to compilation errors.The program given will not run and givean error instead.To correct the program,the variable i needs to be declared outside the for loop.
+In this program variable i is declared in the for loop. So scope of variable i is limited to the for loop only that is between {and} of the for loop.There is a display statement after the for loop where variable i is used which means i is used out of scope. This leads to compilation errors.The program given will not run and givean error instead.To correct the program,the variable i needs to be declared outside the for loop.
 
 ```java
  for(int i=0; i<=5; i++){
@@ -527,3 +554,67 @@ function can return only one value.
 
 Array should be sorted
 ![](./Assets/14/Binarysearch.png)
+
+# ▶ Strings :
+
+String is a special class in java.
+
+```java
+
+String str = "abcd";
+String str1 = new String("asd");
+```
+
+Strings are <mark>IMMUTABLE</mark> (means we can not change strings)
+
+## Taking String input from user
+
+```java
+ String name = sc.next(); // next() accepts only one token
+ String name = sc.nextLine();
+```
+
+## Length of String:
+
+to find the length of String we use <mark>.length()</mark> function
+
+## Concatenation
+
+```java
+String firstName = "Zeeva";
+String lastName = "Singh";
+System.out.println(firstName +" " +lastName);
+```
+
+## String equality:
+
+If you declare string using String literal it points to the old string
+but If you declare string using <mark>new</mark> keyword it create variable in somewhere else in memory.
+
+```java
+String s1 = "Tony";
+        String s2 = "Tony";
+        String s3 = new String("Tony");
+
+        if(s1 == s2){
+            System.out.println("strings are equal");
+        }else{
+            System.out.println("strings are not equal");
+        }
+
+        if(s1 == s3){
+            System.out.println("strings are equal");
+        }else{
+            System.out.println("strings are not equal");
+        }
+```
+
+If want to check only the value of two strings use <mark>equals()<mark> function
+
+```java
+if(s1.equals(s3)){
+            System.out.println("strings are equal");
+        }else{
+            System.out.println("strings are not equal");
+        }
+```
